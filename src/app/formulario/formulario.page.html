@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastrar Álbuns</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <form (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label>Nome:</ion-label>
+        <ion-input type="text" [(ngModel)]="formData.nome" name="nome" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Artista:</ion-label>
+        <ion-textarea [(ngModel)]="formData.artista" name="artista" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+      <ion-label>Ano de Lançamento:</ion-label>
+        <ion-textarea [(ngModel)]="formData.ano" name="ano" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Valor:</ion-label>
+        <ion-textarea [(ngModel)]="formData.valor" name="valor" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Capa:</ion-label>
+        <ion-textarea [(ngModel)]="formData.imagem" name="imagem"></ion-textarea>
+      </ion-item>
+      <ion-button type="submit" expand="block">Cadastrar</ion-button>
+    </form>
+
+</ion-content>
