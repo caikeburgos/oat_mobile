@@ -14,15 +14,13 @@
 	    <ion-card-header>
       <ion-card-title>
         <h1>{{post.nome}}</h1>
-        <p>{{post.artista}}, {{post.ano}}</p>
-        <h2>R$ {{post.valor}}</h2>
       </ion-card-title>
     </ion-card-header>
 	    <ion-card-content>
 			
-			<!-- <ion-button ion-button expand="block" fill="outline" (click)="presentModal(post)" large>Detalhes</ion-button> -->
-      <ion-button ion-button color="warning" (click)="editItem(post)" large>Editar</ion-button>
-      <ion-button ion-button color="danger" (click)="deleteItem(post)" large>Excluir</ion-button>
+			<ion-button ion-button expand="block" (click)="presentModal(post)" large>Detalhes</ion-button>
+      <ion-button ion-button color="warning" expand="block" (click)="editItem(post)" large>Editar</ion-button>
+      <ion-button ion-button color="danger" expand="block" (click)="deleteItem(post)" large>Excluir</ion-button>
 	    </ion-card-content>
   </ion-card>
 

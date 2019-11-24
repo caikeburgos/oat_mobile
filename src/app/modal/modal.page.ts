@@ -9,8 +9,10 @@ import { ModalController } from '@ionic/angular';
 export class ModalPage implements OnInit {
 
   // Data passed in by componentProps
-  @Input() firstName: string;
-  @Input() lastName: string;
+  @Input() nome: string;
+  @Input() artista: string;
+  @Input() ano: string;
+  @Input() valor: string;
   @Input() modalController: ModalController;
 
   constructor() { }

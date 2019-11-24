@@ -45,8 +45,10 @@ export class ListagemPage implements OnInit {
     const modal = await this.modalController.create({
       component: ModalPage,
       componentProps: {
-        'firstName': post.nome,
-        'lastName': post.valor,
+        'nome': post.nome,
+        'artista': post.artista,
+        'ano': post.ano,
+        'valor': post.valor,
         'modalController': this.modalController
       }
     });

@@ -1,15 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Modal</ion-title>
+    <ion-title>Detalhes de {{ nome }}</ion-title>
     <ion-buttons slot="end">
-		<ion-button (click)="dismissModal()">Close</ion-button>
+		<ion-button (click)="dismissModal()">Fechar</ion-button>
 	</ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-	<p>{{ nome }}</p>
-	<p>{{ valor }}</p>
+	<p>Álbum: {{ nome }}</p>
+	<p>Artista: {{ artista }}</p>
+	<p>Ano de Lançamento: {{ ano }}</p>
+	<p>Valor: R$ {{ valor }}</p>
 
 </ion-content>
